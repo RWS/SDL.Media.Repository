@@ -1,0 +1,18 @@
+﻿<div class="jumbotron">
+    <h1>Carousel</h1>
+    <p class="lead">Images in a carousel.</p>
+</div>
+
+<div id="banner">
+</div>
+
+@section scripts
+{
+    <script type="text/javascript" src="/Scripts/sdlmedia/jquery.sdlmedia.carousel.js"></script>
+
+    <script language="javascript">
+        $(function() {
+            $('#banner').sdlmediaCarousel({ url: "//mmcloudtest.dist.sdlmedia.com/json/1aa602ce-8e2f-44c5-a97c-9c2ed27adecf" });
+        });
+    </script>
+}

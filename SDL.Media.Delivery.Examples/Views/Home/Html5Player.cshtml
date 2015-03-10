@@ -1,0 +1,20 @@
+﻿<div class="jumbotron">
+    <h1>HTML5 Player</h1>
+    <p class="lead">Video using the HTML5 player of the browser.</p>
+</div>
+
+<div id="video">
+</div>
+
+<div id="subtitle"></div>
+
+@section scripts
+{
+    <script type="text/javascript" src="/Scripts/sdlmedia/jquery.sdlmedia.html5player.js"></script>
+
+    <script language="javascript">
+        $(function() {
+            $('#video').sdlmediaHtml5Player({ url: "//mmcloudtest.dist.sdlmedia.com/json/CAF6C88B-1F9C-44D6-875B-41A348FC3800" });
+        });
+    </script>
+}
