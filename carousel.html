@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Carousel</title>
+    <link href="/SDL.Media.Delivery/content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/SDL.Media.Delivery/">SDL Media Delivery Examples</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>Carousel</h1>
+            <p class="lead">Images in a carousel.</p>
+        </div>
+        <div id="banner">
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; 2015 - SDL Media Delivery Examples</p>
+        </footer>
+    </div>
+
+    <script src="/SDL.Media.Delivery/scripts/jquery-2.1.3.min.js"></script>
+    <script src="/SDL.Media.Delivery/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/SDL.Media.Delivery/scripts/sdlmedia/jquery.sdlmedia.carousel.js"></script>
+
+    <script language="javascript">
+        $(function() {
+            $('#banner').sdlmediaCarousel({ url: "//mmcloudtest.dist.sdlmedia.com/json/1aa602ce-8e2f-44c5-a97c-9c2ed27adecf" });
+        });
+    </script>
+</body>
+</html>
