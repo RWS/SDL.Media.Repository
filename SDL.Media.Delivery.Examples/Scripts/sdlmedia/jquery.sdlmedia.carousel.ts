@@ -1,4 +1,5 @@
-﻿/// <reference path="../typings/jquery/jquery.d.ts"/>
+﻿/// <reference path="../typings/bootstrap/bootstrap.d.ts"/>
+/// <reference path="../typings/jquery/jquery.d.ts"/>
 /// <reference path="../typings/sdlmedia.d.ts"/>
 
 module SDL.MediaDelivery {
@@ -61,7 +62,9 @@ module SDL.MediaDelivery {
                     var carousel = <HTMLDivElement>document.createElement("div");
                     carousel.id = distribution.id;
                     carousel.className = "carousel slide";
-                    
+                    carousel.setAttribute("data-ride", "carousel");
+                    carousel.setAttribute("data-interval", "2000");
+
                     // Indicators
                     var indicators = <HTMLOListElement>document.createElement("ol");
                     indicators.className = "carousel-indicators";
@@ -116,6 +119,7 @@ module SDL.MediaDelivery {
                     carousel.appendChild(anchor);
 
                     container.appendChild(carousel);
+                    $(carousel).carousel();
                 }
             }
         }
