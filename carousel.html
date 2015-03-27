@@ -54,7 +54,9 @@
     <script language="javascript">
         $(function() {
             $('#banner').sdlmediaCarousel({ url: "//mmcloudtest.dist.sdlmedia.com/json/1aa602ce-8e2f-44c5-a97c-9c2ed27adecf" });
-        });
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });        });
     </script>
 </body>
 </html>

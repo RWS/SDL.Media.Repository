@@ -54,7 +54,9 @@
     <script language="javascript">
         $(function() {
             $('#video').sdlmediaHtml5Player({ url: "//mmcloudtest.dist.sdlmedia.com/json/CAF6C88B-1F9C-44D6-875B-41A348FC3800" });
-        });
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });        });
     </script>
 </body>
 </html>

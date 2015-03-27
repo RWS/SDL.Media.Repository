@@ -67,5 +67,11 @@
     <script src="/SDL.Media.Delivery/scripts/jquery-2.1.3.min.js"></script>
     <script src="/SDL.Media.Delivery/scripts/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script language="javascript">
+        $(function() {
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });        });
+    </script>
 </body>
 </html>
