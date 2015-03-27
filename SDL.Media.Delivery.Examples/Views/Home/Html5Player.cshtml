@@ -3,10 +3,23 @@
     <p class="lead">Video using the HTML5 player of the browser.</p>
 </div>
 
-<div id="video">
+<h2>Source Code</h2>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sourceCode">View details &raquo;</button>
+<div id="sourceCode" class="collapse">
+    <pre><code>&lt;div id="banner"&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript" src="/Scripts/sdlmedia/jquery.sdlmedia.html5player.js"&gt;&lt;/script&gt;
+&lt;script language="javascript"&gt;
+  $(function() {
+    $('#video').sdlmediaHtml5Player({ url: "//mmcloudtest.dist.sdlmedia.com/json/CAF6C88B-1F9C-44D6-875B-41A348FC3800" });
+  });
+&lt;/script&gt;</code></pre>
 </div>
 
-<div id="subtitle"></div>
+<h2>Result</h2>
+
+<div id="video">
+</div>
 
 @section scripts
 {
@@ -15,6 +28,10 @@
     <script language="javascript">
         $(function() {
             $('#video').sdlmediaHtml5Player({ url: "//mmcloudtest.dist.sdlmedia.com/json/CAF6C88B-1F9C-44D6-875B-41A348FC3800" });
+
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
         });
     </script>
 }

@@ -3,6 +3,27 @@
     <p class="lead">Videos using the SDL Media HTML5 player in an IFrame.</p>
 </div>
 
+<h2>Source Code</h2>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sourceCode">View details &raquo;</button>
+<div id="sourceCode" class="collapse">
+    <pre><code>&lt;div class="row"&gt;
+    &lt;div class="col-md-6"&gt;
+        &lt;p&gt;Video 1&lt;/p&gt;
+        &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+            &lt;iframe class="embed-responsive-item" src="//mmcloudtest.dist.sdlmedia.com/Distributions/?o=CAF6C88B-1F9C-44D6-875B-41A348FC3800&responsive=true" allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-6"&gt;
+        &lt;p&gt;Video 2&lt;/p&gt;
+        &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+            &lt;iframe class="embed-responsive-item" src="//mmcloudtest.dist.sdlmedia.com/Distributions/?o=92FF479C-99E2-49B9-B726-06F7754E91A9&responsive=true" allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h2>Result</h2>
+
 <div class="row">
     <div class="col-md-6">
         <p>Video 1</p>
@@ -18,3 +39,14 @@
     </div>
 </div>
 
+
+@section scripts
+{
+    <script language="javascript">
+        $(function() {
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+}

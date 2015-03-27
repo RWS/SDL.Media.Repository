@@ -1,3 +1,4 @@
+/// <reference path="../typings/bootstrap/bootstrap.d.ts"/>
 /// <reference path="../typings/jquery/jquery.d.ts"/>
 /// <reference path="../typings/sdlmedia.d.ts"/>
 var SDL;
@@ -56,6 +57,8 @@ var SDL;
                         var carousel = document.createElement("div");
                         carousel.id = distribution.id;
                         carousel.className = "carousel slide";
+                        carousel.setAttribute("data-ride", "carousel");
+                        carousel.setAttribute("data-interval", "2000");
                         // Indicators
                         var indicators = document.createElement("ol");
                         indicators.className = "carousel-indicators";
@@ -103,6 +106,7 @@ var SDL;
                         anchor.appendChild(anchorSpan);
                         carousel.appendChild(anchor);
                         container.appendChild(carousel);
+                        $(carousel).carousel();
                     }
                 }
             };
