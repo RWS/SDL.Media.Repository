@@ -103,6 +103,7 @@ var SDL;
                         anchor.appendChild(anchorSpan);
                         carousel.appendChild(anchor);
                         container.appendChild(carousel);
+                        $(carousel).carousel();
                     }
                 }
             };
